@@ -1,9 +1,5 @@
-// Use the correct database
-use bookbazaar_reviews;
-
-// Optional: clear the reviews collection for fresh start
-db.reviews.drop();
-printjson({ message: "Dropped existing 'reviews' collection (if it existed)." });
+// Connect to the database
+db = connect("mongodb://localhost/bookbazaar_reviews");
 
 // CREATE: Insert sample reviews
 db.reviews.insertMany([
@@ -18,17 +14,17 @@ db.reviews.insertMany([
     book_id: 202,
     reviewer: "Youssef",
     rating: 5,
-    comment: "Absolutely loved this book!",
     created_at: new Date("2025-07-21T14:30:00Z")
   }
 ]);
+
 printjson({ message: "Inserted 2 sample reviews." });
 
 // READ: Show all reviews
 printjson({ message: "All reviews:" });
-printjson(db.reviews.find().toArray());
+printjson(db.reviews.find());
 
-// UPDATE: Change Fatima's rating to 5
+// UPDATE: Change Fatima's rating
 db.reviews.updateOne(
   { reviewer: "Fatima" },
   { $set: { rating: 5, comment: "Updated: even better on second read." } }
