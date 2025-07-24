@@ -1,7 +1,6 @@
 // Connect to the database
 db = connect("mongodb://localhost/bookbazaar_reviews");
 
-db.createCollection("reviews");
 // CREATE: Insert sample reviews
 db.reviews.insertMany([
   {

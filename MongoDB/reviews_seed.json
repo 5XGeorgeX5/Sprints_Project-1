@@ -1,0 +1,51 @@
+[
+  {
+    "book_id": 1,
+    "reviewer": "Matthew Wael",
+    "rating": 5,
+    "comment": "Absolutely amazing! Great writing and deep message.",
+    "created_at": { "$date": "2024-12-10T10:00:00Z" }
+  },
+  {
+    "book_id": 2,
+    "reviewer": "Yasmine Sherif",
+    "rating": 4,
+    "comment": "Very informative, but a bit complex in some parts.",
+    "created_at": { "$date": "2025-01-15T12:30:00Z" }
+  },
+  {
+    "book_id": 1,
+    "reviewer": "Ahmed Elkady",
+    "rating": 3,
+    "comment": "Good content, but I expected more.",
+    "created_at": { "$date": "2025-02-01T08:45:00Z" }
+  },
+  {
+    "book_id": 3,
+    "reviewer": "George Raafat",
+    "rating": 5,
+    "comment": "A literary gem! Highly recommended.",
+    "created_at": { "$date": "2025-03-10T15:20:00Z" }
+  },
+  {
+    "book_id": 4,
+    "reviewer": "Zinab Mohamed",
+    "rating": 2,
+    "comment": "Didn't enjoy it much, felt repetitive.",
+    "created_at": { "$date": "2025-04-05T09:10:00Z" }
+  },
+  {
+    "book_id": 2,
+    "reviewer": "Omar Hussien",
+    "rating": 4,
+    "comment": "Great insights, but could use more examples.",
+    "created_at": { "$date": "2025-05-20T11:00:00Z" }
+  },
+  {
+    "book_id": 3,
+    "reviewer": "Noureldin Salaheldin",
+    "rating": 5,
+    "comment": "A masterpiece! Loved every page.",
+    "created_at": { "$date": "2025-06-15T14:30:00Z" }
+  }
+]
