@@ -35,3 +35,9 @@ VALUES
     ('Matthew', 'matthew@example.com', SHA2('mattheww', 256)),
     ('Ahmed', 'ahmed@example.com', SHA2('ahmedd', 256));
 
+
+INSERT INTO reviews (user_id, book_id, rating, comment)
+VALUES 
+    (1, 1, 5, 'One of the best reads ever, worth evey minute. Highly recommend'),
+    (2, 2, 4, 'A complex but brilliant read. However it is very slow in the middle.'),
+    (3, 5, 5, 'An absolute masterpiece, great mystrey and plot twist! Highly recommend');
