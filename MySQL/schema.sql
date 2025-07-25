@@ -1,5 +1,3 @@
-CREATE DATABASE bookbazaar;
-
 use bookbazaar;
 
 CREATE TABLE authors (
@@ -46,5 +44,3 @@ CREATE TABLE reviews (
 CREATE INDEX idx_authors_name ON authors(name);
 CREATE UNIQUE INDEX idx_categories_name ON categories(name);
 CREATE INDEX idx_books_title ON books(title);
-
-drop database bookbazaar;
